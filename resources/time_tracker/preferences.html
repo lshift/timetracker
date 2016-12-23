@@ -1,0 +1,49 @@
+      <fieldset class="preferences-form">
+        <legend>Preferences</legend>
+        <dl>
+        <dt class="summary">
+          <span>Usual working hours:</span>
+        </dt>
+        <dd> <table class="no-highlight">
+          <tbody>
+            <tr>
+              <td>
+                <label for="start-time">Start time:</label>
+              </td>
+              <td class='time24h'>
+                <span class="start-time">3:00</span>
+              </td>
+              <td>
+                <input name="start-time" id="start-time" type="range" min="0" max="24" step="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="end-time">End time:</label>
+              </td>
+              <td class='time24h'>
+                <span class="end-time">24:00</span>
+              </td>
+              <td>
+                <input name="end-time" id="end-time" type="range" min="0" max="24" step="1" />
+              </td>
+            </tr>
+          </tbody>
+
+        </table> </dd>
+
+        <dt>Timezone</dt>
+        <dd>
+          <select class="timezone-selector">
+            <option>America/Godthab</option>
+            <option>Europe/London</option>
+            <option>Pacific/Auckland</option>
+          </select>
+        </dd>
+        <dt>Reset fields when creating new task</dt>
+        <dd>
+          <input type='checkbox' id='reset-on-new-task' name='reset-on-new-task'/>
+        </dd>
+
+        </dl>
+      </fieldset>

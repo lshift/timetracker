@@ -1,0 +1,61 @@
+<svg class="time-bars" xmlns="http://www.w3.org/2000/svg" style="width: 128ex; height: 8ex;">
+  <g class="tick-marks">
+    <line y2="100%" x2="0%" y1="0" x1="0%" stroke="black" class="tick-mark hour-tick time-8-0"/>
+    <line y2="75%" x2="2.083333333333333%" y1="25%" x1="2.083333333333333%" stroke="black" class="tick-mark quarter-tick time-8-15"/>
+    <line y2="75%" x2="4.166666666666666%" y1="25%" x1="4.166666666666666%" stroke="black" class="tick-mark quarter-tick time-8-30"/>
+    <line y2="75%" x2="6.25%" y1="25%" x1="6.25%" stroke="black" class="tick-mark quarter-tick time-8-45"/>
+    <text y="50%" x="8.333333333333332%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-9-0">09:00</text>
+    <line y2="75%" x2="10.416666666666668%" y1="25%" x1="10.416666666666668%" stroke="black" class="tick-mark quarter-tick time-9-15"/>
+    <line y2="75%" x2="12.5%" y1="25%" x1="12.5%" stroke="black" class="tick-mark quarter-tick time-9-30"/>
+    <line y2="75%" x2="14.583333333333334%" y1="25%" x1="14.583333333333334%" stroke="black" class="tick-mark quarter-tick time-9-45"/>
+    <text y="50%" x="16.666666666666664%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-10-0">10:00</text>
+    <line y2="75%" x2="18.75%" y1="25%" x1="18.75%" stroke="black" class="tick-mark quarter-tick time-10-15"/>
+    <line y2="75%" x2="20.833333333333336%" y1="25%" x1="20.833333333333336%" stroke="black" class="tick-mark quarter-tick time-10-30"/>
+    <line y2="75%" x2="22.916666666666664%" y1="25%" x1="22.916666666666664%" stroke="black" class="tick-mark quarter-tick time-10-45"/>
+    <text y="50%" x="25%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">11:00</text>
+    <line y2="75%" x2="27.083333333333332%" y1="25%" x1="27.083333333333332%" stroke="black" class="tick-mark quarter-tick time-11-15"/>
+    <line y2="75%" x2="29.166666666666668%" y1="25%" x1="29.166666666666668%" stroke="black" class="tick-mark quarter-tick time-11-30"/>
+    <line y2="75%" x2="31.25%" y1="25%" x1="31.25%" stroke="black" class="tick-mark quarter-tick time-11-45"/>
+    <text y="50%" x="33.333%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">12:00</text>
+    <line y2="75%" x2="35.41666666666667%" y1="25%" x1="35.41666666666667%" stroke="black" class="tick-mark quarter-tick time-12-15"/>
+    <line y2="75%" x2="37.5%" y1="25%" x1="37.5%" stroke="black" class="tick-mark quarter-tick time-12-30"/>
+    <line y2="75%" x2="39.58333333333333%" y1="25%" x1="39.58333333333333%" stroke="black" class="tick-mark quarter-tick time-12-45"/>
+    <text y="50%" x="41.66%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">13:00</text>
+    <line y2="75%" x2="43.75%" y1="25%" x1="43.75%" stroke="black" class="tick-mark quarter-tick time-13-15"/>
+    <line y2="75%" x2="45.83333333333333%" y1="25%" x1="45.83333333333333%" stroke="black" class="tick-mark quarter-tick time-13-30"/>
+    <line y2="75%" x2="47.91666666666667%" y1="25%" x1="47.91666666666667%" stroke="black" class="tick-mark quarter-tick time-13-45"/>
+    <text y="50%" x="50%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">14:00</text>
+    <line y2="75%" x2="52.083333333333336%" y1="25%" x1="52.083333333333336%" stroke="black" class="tick-mark quarter-tick time-14-15"/>
+    <line y2="75%" x2="54.166666666666664%" y1="25%" x1="54.166666666666664%" stroke="black" class="tick-mark quarter-tick time-14-30"/>
+    <line y2="75%" x2="56.25%" y1="25%" x1="56.25%" stroke="black" class="tick-mark quarter-tick time-14-45"/>
+    <text y="50%" x="58.333%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">15:00</text>
+    <line y2="75%" x2="60.416666666666664%" y1="25%" x1="60.416666666666664%" stroke="black" class="tick-mark quarter-tick time-15-15"/>
+    <line y2="75%" x2="62.5%" y1="25%" x1="62.5%" stroke="black" class="tick-mark quarter-tick time-15-30"/>
+    <line y2="75%" x2="64.58333333333334%" y1="25%" x1="64.58333333333334%" stroke="black" class="tick-mark quarter-tick time-15-45"/>
+    <text y="50%" x="66.666%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">16:00</text>
+    <line y2="75%" x2="68.75%" y1="25%" x1="68.75%" stroke="black" class="tick-mark quarter-tick time-16-15"/>
+    <line y2="75%" x2="70.83333333333334%" y1="25%" x1="70.83333333333334%" stroke="black" class="tick-mark quarter-tick time-16-30"/>
+    <line y2="75%" x2="72.91666666666666%" y1="25%" x1="72.91666666666666%" stroke="black" class="tick-mark quarter-tick time-16-45"/>
+    <text y="50%" x="75%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">17:00</text>
+    <line y2="75%" x2="77.08333333333334%" y1="25%" x1="77.08333333333334%" stroke="black" class="tick-mark quarter-tick time-17-15"/>
+    <line y2="75%" x2="79.16666666666666%" y1="25%" x1="79.16666666666666%" stroke="black" class="tick-mark quarter-tick time-17-30"/>
+    <line y2="75%" x2="81.25%" y1="25%" x1="81.25%" stroke="black" class="tick-mark quarter-tick time-17-45"/>
+    <text y="50%" x="83.33%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">18:00</text>
+    <line y2="75%" x2="85.41666666666666%" y1="25%" x1="85.41666666666666%" stroke="black" class="tick-mark quarter-tick time-18-15"/>
+    <line y2="75%" x2="87.5%" y1="25%" x1="87.5%" stroke="black" class="tick-mark quarter-tick time-18-30"/>
+    <line y2="75%" x2="89.58333333333334%" y1="25%" x1="89.58333333333334%" stroke="black" class="tick-mark quarter-tick time-18-45"/>
+    <text y="50%" x="91.66%" style="writing-mode: tb;text-anchor: middle;" stroke="black" class="tick-mark hour-tick time-11-0">19:00</text>
+    <line y2="75%" x2="93.75%" y1="25%" x1="93.75%" stroke="black" class="tick-mark quarter-tick time-19-15"/>
+    <line y2="75%" x2="95.83333333333334%" y1="25%" x1="95.83333333333334%" stroke="black" class="tick-mark quarter-tick time-19-30"/>
+    <line y2="75%" x2="97.91666666666666%" y1="25%" x1="97.91666666666666%" stroke="black" class="tick-mark quarter-tick time-19-45"/>
+  </g>
+  <g>
+    <rect class="time-bar" style='fill: green; fill-opacity: 50%;' title="20140804T080000-Mon Aug 04 2014 10:00:00 GMT+0100 (BST)" height="100%" width="8.333333333333332%" y="0" x="0%"/>
+    <g/>
+    <rect class="time-bar"  style='fill: green; fill-opacity: 50%;' title="Mon Aug 04 2014 12:15:00 GMT+0100 (BST)-Mon Aug 04 2014 13:00:00 GMT+0100 (BST)" height="100%" width="6.2499999999999964%" y="0" x="27.083333333333332%"/>
+    <g/>
+    <g/>
+    <g/>
+    <rect class="time-bar"  style='fill: green; fill-opacity: 50%;' title="Mon Aug 04 2014 17:15:00 GMT+0100 (BST)-20140804T200000" height="100%" width="31.25%" y="0" x="68.75%"/>
+  </g>
+</svg>

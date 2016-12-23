@@ -1,0 +1,12 @@
+<configuration>
+  <!-- Log logback status messages when parsing config files -->
+  <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />  
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%h %l %u %user %date "%r" %s %b</pattern>
+    </encoder>
+  </appender>
+
+  <appender-ref ref="STDOUT" />
+</configuration>

@@ -1,0 +1,12 @@
+<!-- Example configuration for use with tomcat -->
+<Context>
+  <Resource name="jdbc/TimetrackerDB"
+    type="javax.sql.DataSource"
+    factory="com.jolbox.bonecp.BoneCPDataSource"
+    driverClassName="org.postgresql.Driver"
+    jdbcUrl="jdbc:postgresql://localhost/timetracker-test"
+    username="timetracker"
+    password="ttpass6"
+    idleConnectionTestPeriodInMinutes="15"
+  />
+</Context>

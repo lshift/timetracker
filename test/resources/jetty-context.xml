@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure_9_0.dtd">
+
+<!--
+This configuration is used when running the warfile with jetty-runner, and
+to configure the war during the webdriver tests.
+-->
+<Configure id='wac' class="org.eclipse.jetty.webapp.WebAppContext">
+  <Set name="contextPath">/</Set>
+  <Set name="war">target/time-tracker-0.1.0-SNAPSHOT-standalone.war</Set>
+  <Set name="extractWAR">true</Set>
+  <Set name="copyWebDir">false</Set>
+  <Set name="configurationDiscovered">true</Set>
+
+  <New id="DSTest" class="org.eclipse.jetty.plus.jndi.Resource">
+     <Arg><Ref refid='wac'/></Arg>
+     <Arg>jdbc/TimetrackerDB</Arg>
+     <Arg>
+       <New class="com.jolbox.bonecp.BoneCPDataSource">
+         <Set name="driverClass">org.postgresql.Driver</Set>
+         <Set name="jdbcUrl">jdbc:postgresql://localhost/timetracker-test</Set>
+         <Set name="username">timetracker</Set>
+         <Set name="password">ttpass6</Set>
+         <Set name="minConnectionsPerPartition">5</Set>
+         <Set name="maxConnectionsPerPartition">50</Set>
+         <Set name="acquireIncrement">5</Set>
+         <Set name="idleConnectionTestPeriod">30</Set>
+         <Set name="logStatementsEnabled">true</Set>
+      </New>
+    </Arg>
+  </New>
+
+  <Set name="handler">
+    <New id="RequestLog" class="org.eclipse.jetty.server.handler.RequestLogHandler">
+      <Set name="requestLog">
+        <New id="RequestLogImpl" class="ch.qos.logback.access.jetty.RequestLogImpl">
+        </New>
+      </Set>
+    </New>
+  </Set>
+</Configure>

@@ -1,0 +1,270 @@
+/* Reference the pure definitions in files renamed from .css to .less so that we can mix them in */
+@import "../pure-0.5.0.less";
+
+body {
+  margin: 10px;
+}
+
+#navigation {
+  text-align: center;
+  margin-bottom: 10px;
+
+  a {
+    margin-right: 10px;
+  }
+  span#current_day {
+    font-weight: bold;
+  }
+}
+
+svg text {
+  font-weight: normal;
+  font-size: 0.75em;
+}
+
+#header .pure-menu-horizontal .right-menu {
+  float: right;
+}
+
+.time-sheet {
+}
+
+.main-pane {
+  clear: both;
+}
+
+.current-user {
+        float: right;
+}
+
+.time24h {
+  width: 6ex;
+  text-align: center;
+}
+
+.current-date {
+  width: 16ex;
+  text-align: center;
+}
+
+#stats {
+  clear: both;
+  margin-top: 00px;
+  margin-left: 700px;
+
+  .time {
+    font-weight: bold;
+  }
+}
+.pure-table td {
+  border-left: none;
+}
+
+
+.time-sheet {
+  table {
+    width: 100%;
+  }
+  td {
+    height: 1em;
+    font-size: 0.7em;
+  }
+  tr:hover:nth-child(even) td {
+    background:  hsl(218, 14%, 74%);
+  }
+  tr:hover:nth-child(odd) td {
+    background: hsl(218, 14%, 78%);
+  }
+
+  tbody.project-group {
+    .tasks-header, .time-sheet-task:first-child,
+      .editable-time-sheet-task:first-child {
+      border-top: 1px solid #cbcbcb;
+    }
+  }
+  .project, .activity {
+    max-width: 20ex;
+  }
+  .bug {
+    max-width: 10ex;
+  }
+  .description {
+    max-width: 20ex;
+  }
+  select,input {
+    width: 100%;
+  }
+  .invalid {
+    background: #faa;
+  }
+  td.time-bars {
+    width: 50%;
+  }
+
+  .tasks-header svg.time-bars {
+    opacity: 0.66;
+  }
+}
+
+.branding-logo {
+  max-height: 4em;
+  max-width:100%;
+}
+
+.current-time-label {
+  background: #ccc;
+  color: #000;
+}
+
+svg.time-bars {
+  user-select: none;
+  -webkit-user-select: none;
+  height: 2em;
+  width: 100%;
+  min-width: 320px;
+
+  .hour-tick {
+    stroke: black;
+    stroke-width: 1;
+  }
+  .quarter-tick {
+    stroke: black;
+    stroke-width: 0.5;
+  }
+
+  .time-bar {
+    fill:   hsl(120, 100%, 33%);
+    fill-opacity: 0.75;
+  }
+  .proposed-time-bar {
+    .time-bar;
+    fill:   hsl(300, 100%, 25%);
+  }
+  .time-label {
+    stroke:  hsl(0, 100%, 50%);
+  }
+
+  text {
+    writing-mode: tb;
+    text-anchor: middle;
+  }
+}
+
+.idle-time-sheet-task svg.time-bars .time-bar {
+  fill:  hsl(240, 100%, 80%);
+}
+.fade-enter {
+  background: hsl(62, 100%, 50%);
+  transition: background 0.5s;
+}
+
+.fade-enter.fade-enter-active {
+  background: inherit;
+}
+
+.fade-leave {
+  opacity: inherit;
+  transition: opacity 0.5s;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+}
+
+// Definitions for timezilla
+
+.tz-box {
+  display: inline-block;
+  vertical-align:top;
+  margin: 10px;
+}
+
+.tz-horizontal {
+  display: inline-block;
+  vertical-align:top;
+}
+
+
+// Included from goog/css/autocomplete.css
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Styles for goog.ui.ac.AutoComplete and its derivatives.
+ * Note: these styles need some work to get them working properly at various
+ * font sizes other than the default.
+ *
+ * @author pupius@google.com (Daniel Pupius)
+ * @author annams@google.com (Srinivas Annam)
+ */
+
+/*
+ * TODO(annams): Rename (here and in renderer.js) to specify class name as
+ * goog-autocomplete-renderer
+ */
+.ac-renderer {
+  font: normal 13px Arial, sans-serif;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #666;
+  -moz-box-shadow: 2px 2px 2px rgba(102, 102, 102, .4);
+  -webkit-box-shadow: 2px 2px 2px rgba(102, 102, 102, .4);
+  width: 300px;
+}
+
+.ac-row {
+  cursor: pointer;
+  padding: .4em;
+}
+
+.ac-highlighted {
+  font-weight: bold;
+}
+
+.ac-active {
+  background-color:  hsl(231, 9%, 72%);
+}
+
+table.no-highlight {
+  width: inherit;
+  tbody tr:nth-child(even) td {
+    background: inherit;
+  }
+}
+
+.goog-date-picker {
+  position: absolute;
+  border: 1px solid  hsl(0, 0%, 40%);
+  -moz-box-shadow: 2px 2px 2px rgba(102, 102, 102, .4);
+  -webkit-box-shadow: 2px 2px 2px rgba(102, 102, 102, .4);
+
+  background: white;
+
+  .goog-date-picker-head { }
+  .goog-date-picker-wday { }
+  .goog-date-picker-week { }
+  .goog-date-picker-date { }
+  .goog-date-picker-other-month { color: hsl(0, 0%, 40%); }
+  .goog-date-picker-wkend-end { }
+  .goog-date-picker-wkend-start { }
+  .goog-date-picker-foot { }
+
+  tbody tr td.goog-date-picker-selected {
+    background: hsl(240, 100%, 90%);
+  }
+}
+
+.timezilla-query-page {
+    table.results-total {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    table.results td {
+        border: 1px solid;
+    }
+}

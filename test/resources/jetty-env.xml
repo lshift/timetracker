@@ -1,0 +1,21 @@
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+
+	<New id="DSTest" class="org.eclipse.jetty.plus.jndi.Resource">
+		<Arg></Arg>
+		<Arg>jdbc/TimetrackerDB</Arg>
+		<Arg>
+			<New class="com.jolbox.bonecp.BoneCPDataSource">
+				<Set name="driverClass">org.postgresql.Driver</Set>
+				<Set name="jdbcUrl">jdbc:postgresql://localhost/timetracker-test</Set>
+				<Set name="username">timetracker</Set>
+				<Set name="password">ttpass6</Set>
+				<Set name="minConnectionsPerPartition">5</Set>
+				<Set name="maxConnectionsPerPartition">50</Set>
+				<Set name="acquireIncrement">5</Set>
+				<Set name="idleConnectionTestPeriod">30</Set>
+				<Set name="logStatementsEnabled">true</Set>
+			</New>
+		</Arg>
+	</New>
+
+</Configure>

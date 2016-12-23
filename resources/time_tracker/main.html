@@ -1,0 +1,69 @@
+    <div class="timetracker main-pane">
+      <div class="time-sheet">
+      <table class='pure-table'>
+        <tbody>
+          <tr class="time-marks">
+            <td colspan="5" class='wide-descr' rowspan="2">
+              <img class='branding-logo' src="logo-blocky.svg"/>
+            </td>
+            <td class='time-ticks'>(Time Ticks)</td>
+          </tr>
+          <tr class="idle-time-sheet-task" id="idle-task">
+            <td class="time-bars">(Time bars)</td>
+          </tr>
+        </tbody>
+        <tbody class="time-sheet-tasks">
+          <tr class="time-sheet-task">
+            <td class="project">
+                &#xa0;
+            </td>
+            <td class="activity">Development</td>
+            <td class="bug">BUG-42</td>
+            <td class="description">Nasty flying thing</td>
+            <td class="actions">&#xa0;</td>
+            <td class="time-bars">(Time bars)</td>
+          </tr>
+          <tr class="tasks-header">
+            <td colspan="5">
+              <span class="label">
+                <button class="show-hide">?</button>
+                <span class="project-name">Project header</span>
+              </span>
+            </td>
+            <td class='summary' colspan=1>SUMMARY</td>
+          </tr>
+        </tbody>
+        <tbody class="new-time-sheet-tasks">
+          <tr class="editable-time-sheet-task pure-form">
+            <td class="project">
+              <input name="project" type="text" />
+            </td>
+            <td class="activity">
+              <input name="activity" type="text"/>
+            </td>
+            <td class="bug">
+              <input name="bug" placeholder="Ticket ID"/>
+            </td>
+            <td class="description">
+              <input name="description" placeholder="Description"/>
+            </td>
+            <td class="actions">
+              <button class='commit' style='float: left'>Save</button>
+            </td>
+            <td class="time-bars">(Time bars)</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="stats">
+            <td class="wide-descr" colspan="5">&#xA0;</td>
+            <td class="stats-view">
+                <span>Total:</span>
+                <span class="time-recorded">4h0m</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="this-week-summary">A summary of projects this week</div>
+      <p class='spinner'>&#xa0;</p>
+    </div>

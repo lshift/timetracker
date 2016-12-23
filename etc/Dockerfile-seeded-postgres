@@ -1,0 +1,6 @@
+FROM postgres:9.5
+# The postgres Docker image can accept .sh or .sql files in
+# docker-entrypoint-initdb.d, but .sql files will fail on first error (i.e. a
+# DROP in a DB dump), so we use a one-line script to call psql instead.
+RUN echo "PGPASSWORD=$POSTGRES_PASSWORD psql -U postgres < /timetracker-db.sql" > /docker-entrypoint-initdb.d/install-db.sh
+COPY timetracker-db.sql /
